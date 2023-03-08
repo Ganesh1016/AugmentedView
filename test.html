@@ -13,11 +13,11 @@
     vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
     <a-asset>
         <a-asset-item id="mask" src="specs2.gltf"></a-asset-item>
-        <img id="sky" src="bg.jpg" alt="">
+        <img id="sky" src="spaceship.jpeg" alt="">
     </a-asset>
     <a-camera active="false" position="0 0 0"></a-camera>
     <a-entity mindar-face-target="anchorIndex: 1">
-        <a-sphere color="red" radius="0.1"></a-sphere>
+        <!-- <a-sphere color="red" radius="0.1"></a-sphere> -->
         <!-- <a-cone color="red" radius-bottom="0.1" radius-top="0.01" height="0.2"></a-cone> -->
         <!-- <a-box color="blue" width="0.2" height="0.2" depth="0.2"></a-box> -->
         <!-- <a-cylinder color="yellow" radius="0.1" height="0.2"></a-cylinder> -->
@@ -26,7 +26,7 @@
         <!-- <a-plane color="pink" width="0.2" height="0.2"></a-plane> -->
         <!-- <a-ring color="white" radius-inner="0.05" radius-outer="0.1"></a-ring> -->
         <!-- <a-sky src="#sky"  ></a-sky> -->
-        <!-- <a-curvedimage src="#sky" height="10.0" radius="8" theta-length="180" theta-start="36" rotation="0 100 0" scale="0.80 0.80 0.80"></a-curvedimage> -->
+        <a-curvedimage src="#sky" geometry.openEnded="false" height="20.0" radius="8" theta-length="180" theta-start="36" rotation="0 100 0" scale="0.90 0.90 0.90"></a-curvedimage>
     </a-entity>
 
 </a-scene>
