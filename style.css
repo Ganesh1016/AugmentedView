@@ -2,6 +2,7 @@
 padding: 0;
 margin: 0;
 box-sizing: border-box;
+font-family: 'Urbanist', sans-serif;
 }
 
 body {
@@ -11,6 +12,8 @@ justify-content: center; */
 padding: 18px;
 /*height: 100vh; */
 width: 100%;
+background-repeat: no-repeat;
+background-color: #865DFF;
 }
 
 @media only screen and (max-width: 600px) {
@@ -22,15 +25,50 @@ width: 100%;
         flex-direction: column;
     }
 
-    .container {
+    .main-cont{
         height: 80vh;
-        width: 90%;
+        width: 80%;
         overflow: hidden;
-        border-radius: 25px;
-        border: 2px solid black;
-        position: absolute;
+        /* padding: 20px; */
+        /* border-radius: 25px; */
+        /* border: 2px solid black; */
+        /* position: absolute;
         top: 30px;
-        left: 20px;
+        left: 20px; */
+        background: rgba( 10, 7, 41, 0.35 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 3.5px );
+        -webkit-backdrop-filter: blur( 3.5px );
+        border-radius: 15px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        padding: 20px;
+        color: #FFA3FD;
+    }
+
+    .container h1{
+        font-size: 35px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+    .container h2{
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 50px;
+    }
+
+    .container p{
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 20px;
     }
 
     .container video {
@@ -38,30 +76,72 @@ width: 100%;
     }
 
     .scroll {
-        width: 90vw;
-        height: 70px;
+        width: 95vw;
+        height: 80px;
         display: flex;
         flex-direction: row;
         align-items: center;
         overflow-x: auto;
-        justify-content: space-evenly;
+        overflow-y: hidden;
+        justify-content: space-between;
         position: absolute;
         bottom: 20px;
         padding: 10px 20px;
         padding-left: 20px;
+        background: rgba( 208, 206, 223, 0.35 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        /* backdrop-filter: blur( 3.5px ); */
+        /* -webkit-backdrop-filter: blur( 3.5px ); */
+        border-radius: 10px;
+        /* cursor: pointer; */
+        /* border: 2px solid black; */
+    }
+
+    /* width */
+    .scroll::-webkit-scrollbar {
+        width: 3px;
+        height: 8px;
+    }
+    
+    /* Track */
+    .scroll::-webkit-scrollbar-track {
+        background: rgba( 227, 132, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    }
+    
+    /* Handle */
+    .scroll::-webkit-scrollbar-thumb {
+        height: 20px;
+        background: rgba( 25, 24, 37, 0.35 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 3.5px );
+        -webkit-backdrop-filter: blur( 3.5px );
+        border-radius: 10px;
+    }
+    
+    /* Handle on hover */
+    .scroll::-webkit-scrollbar-thumb:hover {
+        background: #1d1329; 
         cursor: pointer;
-        border: 2px solid black;
     }
 
     .btn{
-        width: 70px;
+        width: 150px;
         height: 40px;
-        /* padding: 10px; */
-        font-size: 20px;
-        border: 2px solid black;
-        border-radius: 8px;
-        /* margin: 0px 10px; */
-        background-color: white;
+        padding: 10px;
+        font-size: 18px;
+        color: #FFA3FD;
+        /* border: 2px solid black; */
+        border-radius: 12px;
+        margin: 10px;
+        background: rgba(3, 3, 4, 0.35);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 3.5px );
+        -webkit-backdrop-filter: blur( 3.5px );
+        border-radius: 10px;
         cursor: pointer;
     }
 
