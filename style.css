@@ -27,7 +27,7 @@ background-color: #865DFF;
 
     .main-cont{
         height: 80vh;
-        width: 80%;
+        width: 90%;
         overflow: hidden;
         /* padding: 20px; */
         /* border-radius: 25px; */
@@ -135,7 +135,7 @@ background-color: #865DFF;
         font-size: 18px;
         color: #FFA3FD;
         /* border: 2px solid black; */
-        border-radius: 12px;
+        /* border-radius: 12px; */
         margin: 10px;
         background: rgba(3, 3, 4, 0.35);
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -143,6 +143,8 @@ background-color: #865DFF;
         -webkit-backdrop-filter: blur( 3.5px );
         border-radius: 10px;
         cursor: pointer;
+        outline-style: none;
+        border: none;
     }
 
     .video {
